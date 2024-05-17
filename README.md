@@ -2,7 +2,7 @@
 
 Balloon Blast is an interactive game that uses a hand-tracking module to pop balloons when the player closes their fingers. The game combines computer vision and machine learning to provide an engaging user experience, allowing users to interact with the game using their webcam.
 
-![Gameplay](https://github.com/BhargavNaga/ballon_blast/blob/main/screenshots/demo.mp4) 
+![Gameplay](demo.mp4) 
 
 
 ## Getting Started
