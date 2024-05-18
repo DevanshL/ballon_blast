@@ -34,24 +34,7 @@ handtracking.py
 This module handles the hand tracking functionality using the Mediapipe library. It processes the webcam input to detect hand landmarks and determine whether the hand is closed.
 
 
-Contributions are welcome! Please follow these steps:
-
-Fork the repository.
-
-1. *Create your feature branch*
-   ```bash
-   git checkout -b feature/YourFeature
-
-2. *Commit your changes*
-   ```bash
-   git commit -m 'Add your feature'
-
-3. *push your changes*
-   ```bash
-   git push origin feature/YourFeature
-
-4. open pull request
-
+Contributions are welcome! 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
