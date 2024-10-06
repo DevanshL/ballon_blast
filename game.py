@@ -5,7 +5,7 @@ from settings import *
 from background import Background
 from hand import Hand
 from hand_tracking import HandTracking
-from ballon import Mosquito
+from ballon import Ballon
 from bomb import Bee
 import cv2
 import ui
@@ -37,18 +37,18 @@ class Game:
     def spawn_insects(self):
         t = time.time()
         if t > self.insects_spawn_timer:
-            self.insects_spawn_timer = t + MOSQUITOS_SPAWN_TIME
+            self.insects_spawn_timer = t + BallonS_SPAWN_TIME
 
             # increase the probability that the insect will be a bee over time
             nb = (GAME_DURATION-self.time_left)/GAME_DURATION * 100  / 2  # increase from 0 to 50 during all  the game (linear)
             if random.randint(0, 100) < nb:
                 self.insects.append(Bee())
             else:
-                self.insects.append(Mosquito())
+                self.insects.append(Ballon())
 
-            # spawn a other mosquito after the half of the game
+            # spawn a other Ballon after the half of the game
             if self.time_left < GAME_DURATION/2:
-                self.insects.append(Mosquito())
+                self.insects.append(Ballon())
 
     def load_camera(self):
         _, self.frame = self.cap.read()

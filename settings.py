@@ -16,8 +16,8 @@ DRAW_FPS = True
 BUTTONS_SIZES = (240, 90)
 HAND_SIZE = 150
 HAND_HITBOX_SIZE = (60, 80)
-MOSQUITOS_SIZES = (100, 74)
-MOSQUITO_SIZE_RANDOMIZE = (1,2) # for each new mosquito, it will multiply the size with an random value beteewn X and Y
+BallonS_SIZES = (100, 74)
+Ballon_SIZE_RANDOMIZE = (1,2) # for each new Ballon, it will multiply the size with an random value beteewn X and Y
 BEE_SIZES = (50, 50)
 BEE_SIZE_RANDOMIZE = (1.2, 1.5)
 
@@ -29,8 +29,8 @@ ANIMATION_SPEED = 0.08 # the frame of the insects will change every X sec
 
 # difficulty
 GAME_DURATION =25 # the game will last X sec
-MOSQUITOS_SPAWN_TIME = 1
-MOSQUITOS_MOVE_SPEED = {"min": 1, "max": 5}
+BallonS_SPAWN_TIME = 1
+BallonS_MOVE_SPEED = {"min": 1, "max": 5}
 BEE_PENALITY = 1 # will remove X of the score of the player (if he kills a bee)
 
 # colors

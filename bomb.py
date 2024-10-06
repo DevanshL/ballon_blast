@@ -2,9 +2,9 @@ import pygame
 import random
 import image
 from settings import *
-from ballon import Mosquito
+from ballon import Ballon
 
-class Bee(Mosquito):
+class Bee(Ballon):
     def __init__(self):
         #size
         random_size_value = random.uniform(BEE_SIZE_RANDOMIZE[0], BEE_SIZE_RANDOMIZE[1])
@@ -18,6 +18,6 @@ class Bee(Mosquito):
         self.animation_timer = 0
         
 
-    def kill(self, mosquitos): # remove the mosquito from the list
-        mosquitos.remove(self)
+    def kill(self, Ballons): # remove the Ballon from the list
+        Ballons.remove(self)
         return -BEE_PENALITY

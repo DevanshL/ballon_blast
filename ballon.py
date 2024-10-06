@@ -4,11 +4,11 @@ import time
 import image
 from settings import *
 
-class Mosquito:
+class Ballon:
     def __init__(self):
         #size
-        random_size_value = random.uniform(MOSQUITO_SIZE_RANDOMIZE[0], MOSQUITO_SIZE_RANDOMIZE[1])
-        size = (int(MOSQUITOS_SIZES[0] * random_size_value), int(MOSQUITOS_SIZES[1] * random_size_value))
+        random_size_value = random.uniform(Ballon_SIZE_RANDOMIZE[0], Ballon_SIZE_RANDOMIZE[1])
+        size = (int(BallonS_SIZES[0] * random_size_value), int(BallonS_SIZES[1] * random_size_value))
         # moving
         moving_direction, start_pos = self.define_spawn_pos(size)
         # sprite
@@ -18,8 +18,8 @@ class Mosquito:
         self.animation_timer = 0
 
 
-    def define_spawn_pos(self, size): # define the start pos and moving vel of the mosquito
-        vel = random.uniform(MOSQUITOS_MOVE_SPEED["min"], MOSQUITOS_MOVE_SPEED["max"])
+    def define_spawn_pos(self, size): # define the start pos and moving vel of the Ballon
+        vel = random.uniform(BallonS_MOVE_SPEED["min"], BallonS_MOVE_SPEED["max"])
         moving_direction = random.choice(("left", "right", "up", "down"))
         if moving_direction == "right":
             start_pos = (-size[0], random.randint(size[1], SCREEN_HEIGHT-size[1]))
@@ -61,6 +61,6 @@ class Mosquito:
             self.draw_hitbox(surface)
 
 
-    def kill(self, mosquitos): # remove the mosquito from the list
-        mosquitos.remove(self)
+    def kill(self, Ballons): # remove the Ballon from the list
+        Ballons.remove(self)
         return 1
